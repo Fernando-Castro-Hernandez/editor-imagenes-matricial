@@ -407,9 +407,10 @@ function voltearHorizontal(matriz) {
  * const invertido = voltearVertical(matriz);
  */
 function voltearVertical(matriz) {
-  // TODO: Implementar volteo vertical
-  
-  return []; // REEMPLAZAR
+  // Simplemente creamos una copia superficial del arreglo de filas y lo invertimos.
+  // [...matriz] crea la copia.
+  // .reverse() invierte el orden: la fila 0 pasa a ser la última, etc.
+  return [...matriz].reverse();
 }
 
 /**
